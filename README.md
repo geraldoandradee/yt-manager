@@ -1,1 +1,1 @@
-# yt-manager
+# YouTube Manager

@@ -2,9 +2,13 @@
   "name": "yt-manager",
   "version": "1.0.0",
   "description": "System to manage your YouTube Channel and some streamer features.",
+  "homepage": "https://github.com/geraldoandradee/yt-manager",
+  "repository": "https://github.com/geraldoandradee/yt-manager.git",
   "main": "main.js",
   "scripts": {
-    "start": "node main"
+    "start": "node main",
+    "test": "ls",
+    "start-dev": "nodemon main"
   },
   "author": "Geraldo Andrade <geraldo@geraldoandrade.com>",
   "license": "MIT",
