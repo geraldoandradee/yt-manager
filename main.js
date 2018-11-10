@@ -1,11 +1,14 @@
-var express = require('express');
-var app = express();
+process.env.NODE_PATH = __dirname;
+require("module").Module._initPaths();
+
+const express = require('express');
+const app = express();
+const router = require('app/conf/router');
                   
-app.get('/', function(req, res){
-  res.send('hello world');
-});
-                                
-var port = process.env.PORT || 3000;
+app.use('/', router);
+
+const port = process.env.PORT || 3000;
+
 app.listen(port, function () {
-    console.log('Umbler listening on port %s', port);
+    console.log('Server listening on port %s', port);
 });
