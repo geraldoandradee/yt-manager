@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+    app:
+        hostname: youtubemanager.local
+        build:
+            context: .
+        volumes:
+            - ./:/app
+        ports:
+            - 3000:3000
+        env_file: .env
+        command:
+            - npm
+            - run
+            - start-dev
