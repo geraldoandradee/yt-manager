@@ -1,7 +1,7 @@
 {
   "name": "yt-manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "System to manage your YouTube Channel and some streamer features.",
   "main": "main.js",
   "scripts": {
     "start": "node main"
@@ -10,5 +10,10 @@
   "license": "MIT",
   "dependencies": {
     "express": "4.16.4"
+  },
+  "devDependencies": {
+    "supertest": "3.3.0",
+    "mocha": "5.2.0",
+    "chai": "4.2.0"
   }
 }
